@@ -30,3 +30,4 @@ export * from './termii/termii.provider';
 export * from './twilio/twilio.provider';
 export * from './eazy-sms/eazy-sms.provider';
 export * from './mobishastra/mobishastra.provider';
+export * from './Kaleyra/Kaleyra.provider';

@@ -31,6 +31,7 @@ import {
   whatsAppBusinessConfig,
   eazySmsConfig,
   mobishastraConfig,
+  KaleyraConfig,
 } from '../credentials';
 import { ChatProviderIdEnum, SmsProviderIdEnum } from '../provider.enum';
 
@@ -62,7 +63,15 @@ export const smsProviders: IProviderConfig[] = [
     docReference: `https://docs.novu.co/integrations/providers/sms/plivo${UTM_CAMPAIGN_QUERY_PARAM}`,
     logoFileName: { light: 'plivo.png', dark: 'plivo.png' },
   },
-
+  {
+    id: SmsProviderIdEnum.Kaleyra,
+    displayName: 'Kaleyra',
+    channel: ChannelTypeEnum.SMS,
+    credentials: KaleyraConfig,
+    // Use valid documentation link
+    docReference: 'https://apidocs-sms.kaleyra.com/',
+    logoFileName: { light: 'Kaleyra.png', dark: 'Kaleyra.png' }
+  },
   {
     id: SmsProviderIdEnum.Sms77,
     displayName: 'sms77',

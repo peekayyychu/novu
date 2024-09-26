@@ -44,6 +44,16 @@ export const mailJsConfig: IConfigCredentials[] = [
   ...mailConfigBase,
 ];
 
+export const KaleyraConfig: IConfigCredentials[] = [
+  {
+    key: CredentialsKeyEnum.ApiKey,
+    displayName: "API Key",
+    type: "text",
+    required: true,
+  },
+  ...smsConfigBase,
+]
+
 export const mailgunConfig: IConfigCredentials[] = [
   {
     key: CredentialsKeyEnum.ApiKey,
